@@ -6,6 +6,7 @@ const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const errorHandler = require("./handlers/error");
 const theRoute = require("./routes/theOnlyRoute");
+require("./services/cache")
 app.use(cors());
 
 app.use(bodyParser.json());
